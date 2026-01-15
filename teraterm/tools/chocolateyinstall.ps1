@@ -23,9 +23,10 @@ $packageArgs = @{
 
   softwareName  = 'Tera Term 5.*'
 
-  checksum      = $checksum
-  checksum64    = $checksum64
-  checksumType  = 'sha256'
+  checksum       = $checksum
+  checksumType   = 'sha256'
+  checksum64     = $checksum64
+  checksumType64 = 'sha256'
 
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0)
