@@ -3,8 +3,8 @@
 $packageName= 'teraterm'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url         = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.1/teraterm-5.5.1-x86.exe'
-$urlchecksum = '992150df0899ae5d3517523f485aee15baedc45fc0388101b8608623a098971d'
+$url      = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.1/teraterm-5.5.1-x86.exe'
+$checksum = '992150df0899ae5d3517523f485aee15baedc45fc0388101b8608623a098971d'
 
 # x64
 $url64      = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.1/teraterm-5.5.1-x64.exe'
