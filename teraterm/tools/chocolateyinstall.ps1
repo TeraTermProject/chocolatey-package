@@ -3,12 +3,12 @@
 $packageName= 'teraterm'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url      = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.1/teraterm-5.5.1-x86.exe'
-$checksum = '992150df0899ae5d3517523f485aee15baedc45fc0388101b8608623a098971d'
+$url      = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.2/teraterm-5.5.2-x86.exe'
+$checksum = '8e6b373520199496268e968ef5cc4a9e18d1245c5d924ee3b8210b27d062a907'
 
 # x64
-$url64      = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.1/teraterm-5.5.1-x64.exe'
-$checksum64 = 'fe1f8170e22f4bb76c1a13c04e8c394d64b9c633683df2d006ace39ca7f97f57'
+$url64      = 'https://github.com/TeraTermProject/teraterm/releases/download/v5.5.2/teraterm-5.5.2-x64.exe'
+$checksum64 = '202f42ea00e444763570d1dd5e2d315e3005e6afb48f63389af7634677e01f3a'
 
 # ARM64
 #   https://docs.chocolatey.org/en-us/create/functions/get-osarchitecturewidth/#notes

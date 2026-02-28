@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>teraterm5</id>
-    <version>5.5.1</version>
+    <version>5.5.2</version>
     <packageSourceUrl>https://github.com/TeraTermProject/chocolatey-package/</packageSourceUrl>
     <owners>TeraTerm Project</owners>
     <!-- ============================== -->
@@ -11,7 +11,7 @@
     <authors>T. Teranishi, TeraTerm Project</authors>
     <projectUrl>https://teratermproject.github.io/index-en.html</projectUrl>
     <iconUrl>http://cdn.rawgit.com/TeraTermProject/chocolatey-package/master/icons/teraterm5.png</iconUrl>
-    <copyright>(c) 1994-1998 T. Teranishi, 2004-2025 TeraTerm Project</copyright>
+    <copyright>(c) 1994-1998 T. Teranishi, 2004-2026 TeraTerm Project</copyright>
     <licenseUrl>https://teratermproject.github.io/manual/5/en/about/copyright.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/TeraTermProject/teraterm</projectSourceUrl>
@@ -31,23 +31,28 @@ Tera Term is free software terminal emulator which supports:
     </description>
     <releaseNotes>
 ## Tera Term
-### 2025.11.17 (Ver 5.5.1)
+### 2026.01.21 (Ver 5.5.2)
   * Bug fixes
-    * Fixed settings not updating to match the log file name after user modification in the "Log" dialog box (to input the log file name). (issue #896)
-    * Fixed an issue where a comment could not be added (File > Comment to Log...) while binary logging. (issue #863)
-    * Fixed Tera Term crashes when selecting multiple files using Kermit or Quick-VAN or YMODEM or ZMODEM send. (issue #9, #942)
-    * Fixed CANCEL is not implemented when YMODEM receiving. (issue #786)
-    * Fixed ZMODEM receiving stop when file writing was impossible. (issue #917)
-    * Modified the CR LF sent in the ZMODEM hex header from 0x8D 0x8A to 0x0D 0x8A. (issue #889)
-    * Fixed Print (File > Print...) is not Unicode compatible. (issue #815)
+    * Fixed text was not rendered correctly when setting character space and Drawing resized font to fit cell width is on. (issue #1006)
+    * Fixed an issue where the "Space between characters (lines)" from "Additional settings > Font" tab. This bug was introduced in 5.0. (issue #1008)
+    * Fixed an issue where the window was not hidden when ttermpro.exe was launched with the /V option. This bug was introduced in 5.4.1. (issue #975)
+    * Fixed an issue where the macro command "connect" failed to connect to the host when ttermpro.exe was launched with the /I option. This bug was introduced in 5.4.1. (issue #975)
+    * Fixed sending data using send, sendln, sendbinary, sendtext macro commands follows local echo settings. This bug was introduced in 5.0. (issue #147)
   * Misc
-    * Upgraded TTSSH to 3.5.1.
+    * Upgraded TTSSH to 3.5.2.
+    * Upgraded Inno Setup that is used for the installer to 6.7.0. (issue #963)
+    * Upgraded TTX KanjiMenu Plug-in to 0.1.11
 
 ## TTSSH
-### 2025.11.17 (Ver 3.5.1)
+### 2026.01.21 (Ver 3.5.2)
   * Bug fixes
-    * Fixed disconnection after key re-exchange. This bug was introduced in 3.5.0 (Tera Term 5.5.0). (issue #895)
-    * Fixed an issue where SCP file transfer became slow. This bug was introduced in 3.4.1 (Tera Term 5.4.1). (issue #883)
+    * Fixed an issue where SCP receiving did not save to the Downloads folder if the receiving folder was not specified. This bug was introduced in 3.1 (Tera Term 5.1). (issue #1057)
+    *Fixed an issue that caused a crash when key exchange negotiation failed. This bug was introduced in 3.5.0 (Tera Term 5.5.0). (issue #1070)
+    *Fixed an issue where the SCP receiving dialog title was "SCP sending file." (issue #1055)
+
+## TTSSH
+### 2026.01.21 (Ver 0.1.11)
+  * Modify version information.
     </releaseNotes>
     <!-- =============================== -->      
 
