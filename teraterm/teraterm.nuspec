@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>teraterm5</id>
-    <version>5.6.0</version>
+    <version>5.6.1</version>
     <packageSourceUrl>https://github.com/TeraTermProject/chocolatey-package/</packageSourceUrl>
     <owners>TeraTerm Project</owners>
     <!-- ============================== -->
@@ -29,57 +29,7 @@ Tera Term is free software terminal emulator which supports:
  * File transfer protocols (Kermit, XMODEM, YMODEM, ZMODEM, B-PLUS, and Quick-VAN)
  * Scripts using the "Tera Term Language".
     </description>
-    <releaseNotes>
-## Tera Term
-### 2026.02.28 (Ver 5.6.0)
-  * Changes
-    * Character width can now be specified by the user for each Unicode code point. (issue #318, #1024)
-      When specify character width settings in TERATERM.INI, "Use character-by-character width override settings" check box becomes available, in the Encoding tab ("Additional settings > Encoding") .
-    * Added support for dumb terminal emulation. (issue #1096)
-      Added "dumb" to Terminal ID in the Terminal tab ("Setup > Terminal...").
-    * In the Serial Port tab ("Setup > Serial port..."), added the ability to toggle the RTS and DTR control signals between low and high, and to configure RTS and DTR flow control. (issue #934)
-    * Reduced occurrences of lost incoming data on high-bit-rate serial connections. (issue #894)
-    * Added support for receiving binary data and save it as a file. (issue #894)
-      * Added Receive file dialog ("File > Receive file...").
-      * Added macro command "recvfile".
-    * Command-line options of Tera Term launched from "Duplicate session" menu are no longer accessible. (issue #128)
-    * "File > Change directory..." menu can now be selected even when the session is disconnected. (issue #969)
-    * In the Encoding tab ("Additional settings > Encoding"), "Ambiguous Characters width" and "Override Emoji Characters width" settings are no longer update automatically when the character encoding is changed. (issue #1127)
-    * Open "Settings > Personalization > Fonts" instead of opening the "%WINDIR%\Fonts" folder if possible when opening Windows font settings in the Font tab ("Setup > Font..."). (issue #979)
-    * Add the Plugin tab ("Additional settings > Plugin"). Enabled plugin loading settings. (issue #604)
-    * Added broadcast.log to Setup directory ("Setup > Setup directory..."). (issue #928)
-    * Setup directory ("Setup > Setup directory...") is now resizable. (issue #1106)
-    * Susie plugin is now usable with the arm64 version of Tera Term. (issue #1121)
-  * Bug fixes
-    * Fixed a bug that prevented the transfer dialogs for Kermit, XModem, YModem, ZModem, B-Plus and Quick-VAN from being closed when a session was disconnected. (issue #973)
-    * Fixed an issue where the serial port data length and flow control settings were not reflected in the enabled/disabled state of the "File > Transfer > YMODEM, ZMODEM, B-Plus, Quick-VAN" menu items. This bug was introduced in 4.66. (issue #969)
-    * Fixed an issue Cancel button in printing dialog is not working when printing from print menu ("File > Print..."). (issue #1017)
-    * Fixed an issue where the Alt+T access key sent the AYT (Are You There) command even when the active TCP/IP connection was not TELNET. (issue #1086)
-    * Fixed a bug that caused FTHideDialog in TERATERM.INI to stop working. This bug was introduced in 5.0. (issue #967)
-    * Fixed an issue where Tera Term crashes when using susie plugin. (issue #1121)
-    * The error dialog is no longer shown when the PC fails to create the file during execution of reception macro commands (kmtrecv, ymodemrecv, bplusrecv and quickvanrecv). (issue #973)
-  * Misc
-    * Upgraded TeraTerm Menu to 1.21.
-    * Upgraded TTSSH to 3.6.0.
-    * Upgraded Inno Setup that is used for the installer to 6.7.1. (issue #1125)
-
-## TTSSH
-### 2026.02.28 (Ver 3.6.0)
-  * Changes
-    * Added support for SSH2 hybrid key exchange methods combining post-quantum cryptography (PQC): mlkem768x25519-sha256 (issue #338)
-    * Added support for SSH2 hybrid key exchange methods combining post-quantum cryptography (PQC): sntrup761x25519-sha512, sntrup761x25519-sha512@openssh.com (issue #337)
-    * Changed the key exchange information displayed in the "About TTSSH" dialog to DH group and elliptic curve details. (issue #1018)
-    * Improved the speed of receiving a file using SCP. (issue #1056)
-    * Modified the SCP file transfer dialog so that the button (Send/Receive) executed when pressing the Enter key switches according to the focus position of the input field. (issue #1108)
-    * Modified to display the icon of the progress dialog shown during file transfer using SCP on the taskbar. (issue #1108)
-  * Misc
-    * Upgraded LibreSSL to 4.2.1. (issue #962)
-    * Upgraded zlib to 1.3.2. (issue #1135)
-
-## TeraTerm Menu
-### 2026.02.28 (Ver 1.21)
-  * Command-line options of Tera Term launched from TeraTerm Menu are no longer accessible. (issue #128)
-    </releaseNotes>
+    <releaseNotes>https://github.com/TeraTermProject/teraterm/releases/tag/v5.6.1</releaseNotes>
     <!-- =============================== -->      
 
   </metadata>
