@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>teraterm5</id>
-    <version>5.6.2</version>
+    <version>5.7.0</version>
     <packageSourceUrl>https://github.com/TeraTermProject/chocolatey-package/</packageSourceUrl>
     <owners>TeraTerm Project</owners>
     <!-- ============================== -->
@@ -29,7 +29,7 @@ Tera Term is free software terminal emulator which supports:
  * File transfer protocols (Kermit, XMODEM, YMODEM, ZMODEM, B-PLUS, and Quick-VAN)
  * Scripts using the "Tera Term Language".
     </description>
-    <releaseNotes>https://github.com/TeraTermProject/teraterm/releases/tag/v5.6.2</releaseNotes>
+    <releaseNotes>https://github.com/TeraTermProject/teraterm/releases/tag/v5.7.0</releaseNotes>
     <!-- =============================== -->      
 
   </metadata>
